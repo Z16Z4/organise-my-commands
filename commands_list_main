@@ -1,0 +1,57 @@
+sudo pacman -Syu
+sudo pacman -S
+sudo nmap -PR -sn
+sudo nmap -PE -sn
+sudo nmap -PP -sn
+sudo nmap -PM -sn
+sudo nmap -PS22,80,443 -sn
+sudo nmap -PA22,80,443 -sn
+sudo nmap -PU53,161,162 -sn
+sudo nmap -n
+sudo nmap -R
+sudo nmap -sn
+nmap -iL
+sudo arp-scan -I eth0 -l
+nmap -sT
+sudo nmap -sS
+sudo nmap -sU
+nmap -p-
+nmap -p1-1023
+nmap -F
+nmap -r
+nmap -T<0-5>
+nmap --max-rate 50
+nmap --min-rate 15
+nmap --min-parallelism 100
+sudo nmap -sN
+sudo nmap -sF
+sudo nmap -sX
+sudo nmap -sM
+sudo nmap -sA
+sudo nmap -sW
+sudo nmap --scanflags <flag>
+sudo nmap -S SPOOFED_IP <ip>
+sudo nmap --spoof-mac SPOOFED_MAC
+nmap -D DECOY_IP,ME <ip>
+sudo nmap -sI ZOMBIE_IP <IP>
+sudo nmap -f
+sudo nmap -ff
+sudo nmap --source-port PORT_NUM
+sudo nmap --data-length NUM
+nmap --reason
+nmap -v
+nmap -vv
+nmap -d
+nmap -dd
+nmap -sV
+nmap -sV --version-light
+nmap -sV --version-all
+sudo nmap -O
+nmap --traceroute
+nmap --script=SCRIPTS
+nmap -sC
+nmap -A
+nmap -oN
+nmap -oG
+nmap -oX
+nmap -oA

@@ -1,0 +1,57 @@
+sudo pacman -Syu     :update arch system
+sudo pacman -S     :install package on arch system
+sudo nmap -PR -sn     :nmap arp scan
+sudo nmap -PE -sn     :nmap ICMP echo scan
+sudo nmap -PP -sn     :nmap timestamp scan
+sudo nmap -PM -sn     :nmap address mask scan
+sudo nmap -PS22,80,443 -sn     :tcp syn ping scan
+sudo nmap -PA22,80,443 -sn     :nmap tcp ack ping scan
+sudo nmap -PU53,161,162 -sn     :nmap udp ping scan
+sudo nmap -n     :nmap with no DNS lookup
+sudo nmap -R     :nmap with reverse-DNS lookup for all hosts
+sudo nmap -sn     :nmap with host discovery only
+nmap -iL     :nmap scan a list of hosts <list_of_hosts.txt>
+sudo arp-scan -I eth0 -l     :arp scan ARP queries for all valid IP addresses on eth0
+nmap -sT     :nmap tcp connect scan
+sudo nmap -sS     :nmap tcp syn scan
+sudo nmap -sU     :nmap udp scan
+nmap -p-     :nmap scan all ports
+nmap -p1-1023     :nmap scan ports 1 to 1023
+nmap -F     :nmap scan 100 most common ports
+nmap -r     :nmap scan ports in consecutive order
+nmap -T<0-5>     :nmap speed -T0 being the slowest and T5 the fastest
+nmap --max-rate 50     :nmap scan at rate <= 50 packets/sec
+nmap --min-rate 15     :nmap scan at rate >= 15 packets/sec
+nmap --min-parallelism 100     :at least 100 probes in parallel
+sudo nmap -sN     :nmap tcp null scan
+sudo nmap -sF     :nmap fin scan
+sudo nmap -sX     :nmap xmas scan
+sudo nmap -sM     :nmap maimon scan
+sudo nmap -sA     :nmap tcp ack scan
+sudo nmap -sW     :nmap tcp window scan
+sudo nmap --scanflags <flag>     :nmap custom scan
+sudo nmap -S SPOOFED_IP <ip>     :nmap spoofed source ip scan
+sudo nmap --spoof-mac SPOOFED_MAC     :nmap spoof mac address scan
+nmap -D DECOY_IP,ME <ip>     :nmap decoy scan
+sudo nmap -sI ZOMBIE_IP <IP>     :nmap idle zombie scan
+sudo nmap -f     :nmap but fragment ip data into 8 bytes
+sudo nmap -ff     :nmap but fragment ip data into 16 bytes
+sudo nmap --source-port PORT_NUM     :nmap but specify source port number
+sudo nmap --data-length NUM     :nmap but append random data to reach given length
+nmap --reason     :nmap explains how nmap made its conclusion
+nmap -v     :nmap in verbose mode
+nmap -vv     :nmap in very verbose mode
+nmap -d     :nmap in debugging mode
+nmap -dd     :nmap in details for debugging mode
+nmap -sV     :nmap scan determine service and version info on open ports
+nmap -sV --version-light     :nmap scan try the most likely probes (2) version info
+nmap -sV --version-all     :nmap scan try all available probes (9)
+sudo nmap -O     :nmap scan detect OS os
+nmap --traceroute     :nmap scan traceroute to target
+nmap --script=SCRIPTS     :nmap scan with script
+nmap -sC     :nmap scan with default scripts
+nmap -A     :nmap scan equal to -sV -O -sC --traceroute
+nmap -oN     :nmap scan save output in normal format
+nmap -oG     :nmap scan save output in grepable format
+nmap -oX     :nmap scan save output in XML format
+nmap -oA     :nmap scan save output in normal, xml and grepable formats
