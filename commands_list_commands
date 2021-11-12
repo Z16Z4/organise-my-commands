@@ -55,3 +55,4 @@ nmap -oN     :nmap scan save output in normal format
 nmap -oG     :nmap scan save output in grepable format
 nmap -oX     :nmap scan save output in XML format
 nmap -oA     :nmap scan save output in normal, xml and grepable formats
+echo hey ryan     :prints hey ryan
