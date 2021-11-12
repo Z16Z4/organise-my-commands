@@ -55,4 +55,3 @@ nmap -oN
 nmap -oG
 nmap -oX
 nmap -oA
-echo hey ryan

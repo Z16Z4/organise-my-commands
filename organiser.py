@@ -103,7 +103,10 @@ try:
             os.system("echo '" + new_command + "' >> commands_list_main")
             os.system("echo '" + new_command + "     :" + comment +"' >> commands_list_commands")
         else:
+            main_comments = list + '_main'
             os.system("echo '" + new_command + "' >> " + list + "")
+            os.system("echo '" + new_command + "     :" + comment +"' >> " + main_comments + "")
+
     else:
         print(" ")
 except IndexError:
